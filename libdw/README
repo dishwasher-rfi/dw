@@ -1,0 +1,10 @@
+Compilation and installation
+============================
+
+"./autogen.sh"
+
+"./configure 'CFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2' 'CFLAGS=-fopenmp' 'LDFLAGS=-fopenmp' 'LIBS=-fopenmp'"
+
+"make"
+
+"make install"

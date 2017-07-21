@@ -1,0 +1,12 @@
+numpy==1.8.2
+guidata==1.6.1
+guiqwt==2.3.1
+tables==3.1.1
+
+spyder==2.3.0
+h5py==2.2.1
+Sphinx==1.2.3
+scipy==0.14.0
+PIL==2.5.1
+pyqwt==5.2.1
+PyQt4==4.11.2
