@@ -2,6 +2,25 @@
 Installation (GNU/Linux)
 ========================
 
+Debian 9 (Stretch)
+=================
+
+Download DishWasher:
+	git clone https://github.com/dishwasher-rfi/dw
+
+Install build tools:
+	apt-get install automake autoconf libtool-bin pkg-config libgsl-dev make 
+
+Set DishWasher installation path:
+	export DW_PREFIX=~/dishwasher/
+
+Install python modules using pip (as user): 
+		pip install --install-option="--prefix=$DW_PREFIX" --user cython
+		pip install --install-option="--prefix=$DW_PREFIX" --user spyder==2.3.5.2 numpy scipy==0.16.1 astropy tables matplotlib PyWavelets guidata guiqwt
+
+Install 
+	python setup.py install_libdw --user
+
 Debian 8 (Jessie)
 =================
 
