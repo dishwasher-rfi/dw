@@ -42,6 +42,7 @@ Or as user (recommended):
 	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" cython
 	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" numpy ## needs packages libblas-common libblas3 liblapack3
 	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" matplotlib ## needs package g++
+	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" liblapack-dev ## needs package liblapack-dev
 	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" spyder==2.3.5.2 scipy==0.16.1 astropy tables PyWavelets guidata guiqwt
 
 
