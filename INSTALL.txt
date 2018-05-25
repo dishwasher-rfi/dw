@@ -30,7 +30,7 @@ At runtime, DiwshWasher requires the following python modules:
 You can install these as root via apt:
 	apt-get install python-scipy python-numpy python-matplotlib python-tables python-guidata python-spyder python-astropy python-guiqwt python-pywt
 
-Or as user:
+Or as user (recommended):
 	
  ... install a working pip:
 	curl -O https://bootstrap.pypa.io/get-pip.py # (if you don't have curl installed, try with 'wget https://bootstrap.pypa.io/get-pip.py')
