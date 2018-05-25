@@ -33,8 +33,9 @@ You can install these as root via apt:
 Or as user:
 	
  ... install a working pip:
-	curl -O https://bootstrap.pypa.io/get-pip.py # (if you don't have curl installed, try with wget)
-	./get-pip.py --prefix $DW_PREFIX
+	curl -O https://bootstrap.pypa.io/get-pip.py # (if you don't have curl installed, try with 'wget https://bootstrap.pypa.io/get-pip.py')
+	chmod +x get-pip.py	
+	./get-pip.py --target $DW_PREFIX
 
  ... install python modules using pip:
 	export PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
