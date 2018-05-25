@@ -5,27 +5,44 @@ Installation (GNU/Linux)
 Debian 9 (Stretch)
 =================
 
+### Compiling ###
+
 As root, Install build tools:
 	apt-get install automake autoconf libtool-bin pkg-config make git
 
  ... and libs:
-	apt-get install libgsl-dev libfreetype6-dev libhdf5-dev
+	apt-get install libgsl-dev libfreetype6-dev libhdf5-dev 
 
 As user, download DishWasher:
 	git clone https://github.com/dishwasher-rfi/dw
 
- ... set DishWasher installation path:
+ ... choose DishWasher installation path:
 	export DW_PREFIX=~/dishwasher/
 
- ... install python modules using pip (as user):
-	PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
-	pip install --install-option="--prefix=$DW_PREFIX" cython
-	pip install --install-option="--prefix=$DW_PREFIX" numpy
-	pip install --install-option="--prefix=$DW_PREFIX" matplotlib
-	pip install --install-option="--prefix=$DW_PREFIX" spyder==2.3.5.2 scipy==0.16.1 astropy tables PyWavelets guidata guiqwt
-
-and install DishWasher:
+ ... and install DishWasher:
 	python setup.py install_libdw --user
+
+### Running ###
+
+At runtime, DiwshWasher requires the following python modules:
+	cython numpy matplotlib spyder==2.3.5.2 scipy==0.16.1 astropy tables PyWavelets guidata guiqwt	
+
+You can install these as root via apt:
+	apt-get install python-scipy python-numpy python-matplotlib python-tables python-guidata python-spyder python-astropy python-guiqwt python-pywt
+
+Or as user:
+	
+ ... install a working pip:
+	curl -O https://bootstrap.pypa.io/get-pip.py # (if you don't have curl installed, try with wget)
+	./get-pip.py --prefix $DW_PREFIX
+
+ ... install python modules using pip:
+	export PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
+	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" cython
+	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" numpy ## needs packages libblas-common libblas3 liblapack3
+	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" matplotlib
+	$DW_PREFIX/bin/pip install --install-option="--prefix=$DW_PREFIX" spyder==2.3.5.2 scipy==0.16.1 astropy tables PyWavelets guidata guiqwt
+
 
 Debian 8 (Jessie)
 =================
