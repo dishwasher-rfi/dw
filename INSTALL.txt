@@ -33,7 +33,7 @@ You can install these as root via apt:
 Or as user (recommended):
 	
  ... install a working pip:
-	curl -O https://bootstrap.pypa.io/get-pip.py # (if you don't have curl installed, try with 'wget https://bootstrap.pypa.io/get-pip.py')
+	wget https://bootstrap.pypa.io/get-pip.py
 	chmod +x get-pip.py	
 	./get-pip.py --prefix $DW_PREFIX
 
