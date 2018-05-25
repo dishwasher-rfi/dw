@@ -8,7 +8,7 @@ Debian 9 (Stretch)
 ### Compiling ###
 
 As root, Install build tools:
-	apt-get install automake autoconf libtool-bin pkg-config make git
+	apt-get install automake autoconf libtool-bin pkg-config make git python-dev
 
  ... and libs:
 	apt-get install libgsl-dev libfreetype6-dev libhdf5-dev 
