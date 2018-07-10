@@ -8,7 +8,7 @@
 # Authors: Federico Cantini <cantini@ira.inaf.it>
 #          Marco Bartolini <bartolini@ira.inaf.it>
 #
-# Mantainer: Federico Cantini <cantini@ira.inaf.it>
+# Mantainer: Francesco Bedosti <bedosti@ira.inaf.it>, Alessandra Zanichelli <a.zanichelli@ira.inaf.it>, Marco Bartolini <m.bartolini@ira.inaf.it>, Federico Cantini <cantini@ira.inaf.it>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -54,8 +54,8 @@ setup(
       description = "DishWasher - RFI cleaning tool fo single dish radiotelecope data",
       author = "Federico Cantini, Enrico Favero, Marco Bartolini",
       author_email = "cantini@ira.inaf.it, efavero@ira.inaf.it, bartolini@ira.inaf.it",
-      maintainer = "Enrico Favero",
-      maintainer_email = "efavero@ira.inaf.it",
+      maintainer = "Francesco Bedosti, Alessandra Zanichelli, Marco Bartolini, Federico Cantini",
+      mantainer_email = "bedosti@ira.inaf.it, a.zanichelli@ira.inaf.it, m.bartolini@ira.inaf.it, cantini@ira.inaf.it",
       license = "gpl-3.0",
       packages = ["dw",
                   "dw.core",
