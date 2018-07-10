@@ -108,6 +108,7 @@ from guiqwt.tools import AnnotatedPointTool, HRangeTool, ContrastPanelTool, VCur
 import dw.gui.prefs as prefs
 from dw.flag.rfi_dect_func import id_dict
 import recurrence
+import math
 
 def mu_range(limits,kx,ky):
     """Return the axis limits while changing measure unit
