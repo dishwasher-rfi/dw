@@ -7,7 +7,7 @@
 # Authors: Federico Cantini <cantini@ira.inaf.it>
 #          Marco Bartolini <bartolini@ira.inaf.it>
 #
-# Mantainer: Federico Cantini <cantini@ira.inaf.it>
+# Mantainer: Francesco Bedosti <bedosti@ira.inaf.it>, Alessandra Zanichelli <a.zanichelli@ira.inaf.it>, Marco Bartolini <m.bartolini@ira.inaf.it>, Federico Cantini <cantini@ira.inaf.it>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ Authors: Federico Cantini <cantini@ira.inaf.it>
          Enrico Favero <efavero@ira.inaf.it>
          Marco Bartolini <bartolini@ira.inaf.it>
 
-Mantainer: Enrico Favero <efavero@ira.inaf.it>
+Mantainer: Francesco Bedosti <bedosti@ira.inaf.it>, Alessandra Zanichelli <a.zanichelli@ira.inaf.it>, Marco Bartolini <m.bartolini@ira.inaf.it>, Federico Cantini <cantini@ira.inaf.it>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
