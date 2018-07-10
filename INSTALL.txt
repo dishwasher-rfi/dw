@@ -2,10 +2,6 @@
 Installation (GNU/Linux)
 ========================
 
-Set the following:
-export DW_PREFIX=~/dishwasher/
-export PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
-
 Debian 9 (Stretch)
 =================
 
@@ -174,4 +170,15 @@ Install dw
 CentOS/Scientific Linux 5
 =========================
 To Do
+
+========================
+Launch DishWasher
+========================
+
+Set the following variables:
+export DW_PREFIX=~/dishwasher/  #installation directory
+export PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
+
+Launch DW with the following command:
+$DW_PREFIX/bin/dwgui
 
