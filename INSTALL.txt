@@ -2,6 +2,10 @@
 Installation (GNU/Linux)
 ========================
 
+Set the following:
+export DW_PREFIX=~/dishwasher/
+export PYTHONPATH=$DW_PREFIX/lib/python2.7/site-packages/
+
 Debian 9 (Stretch)
 =================
 
