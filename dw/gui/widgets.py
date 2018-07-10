@@ -847,10 +847,10 @@ class MainWidget(QSplitter):
         self.image.bandwidth = self.data_ref.get_bandwidth(row)
         self.image.data = self.data_ref.dataset2np_array(row)
         self.image.a_ut = self.data_ref.get_ut(row)[0]
-        self.image.a_ascension = math.degrees(self.data_ref.get_ascension(row)[0])
-        self.image.a_declination = math.degrees(self.data_ref.get_declination(row)[0])
-        self.image.a_azimuth = math.degrees(self.data_ref.get_azimuth(row)[0])
-        self.image.a_elevation = math.degrees(self.data_ref.get_elevation(row)[0])
+        self.image.a_ascension = self.data_ref.get_ascension(row)[0]
+        self.image.a_declination = self.data_ref.get_declination(row)[0]
+        self.image.a_azimuth = self.data_ref.get_azimuth(row)[0]
+        self.image.a_elevation = self.data_ref.get_elevation(row)[0]
         self.image.a_source = self.data_ref.get_source(row)[0]
         self.image.a_on_track = self.data_ref.get_on_track(row)[0]
         try:
@@ -956,10 +956,10 @@ class MainWidget(QSplitter):
                 y = Y[-1]
 
         self.image.ut = self.image.a_ut[y]
-        self.image.azimuth = self.image.a_azimuth[y]
-        self.image.elevation = self.image.a_elevation[y]
-        self.image.ra = self.image.a_ascension[y]
-        self.image.dec = self.image.a_declination[y]
+        self.image.azimuth = math.degrees(self.image.a_azimuth[y])
+        self.image.elevation = math.degrees(self.image.a_elevation[y])
+        self.image.ra = math.degrees(self.image.a_ascension[y])
+        self.image.dec = math.degrees(self.image.a_declination[y])
         self.image.name = self.image.a_source[y]
         self.image.flag_meta = self.flag_meta
         update_dataset(self.properties.dataset, self.image)
@@ -1950,10 +1950,10 @@ class PolaViewerWidget(MainWidget):
         self.image.bandwidth = self.data_ref.get_bandwidth(row)
         self.image.data = self.data_ref.polaset2np_array(row)
         self.image.a_ut = self.data_ref.get_ut(row)
-        self.image.a_ascension = math.degrees(self.data_ref.get_ascension(row)[0])
-        self.image.a_declination = math.degrees(self.data_ref.get_declination(row)[0])
-        self.image.a_azimuth = math.degrees(self.data_ref.get_azimuth(row)[0])
-        self.image.a_elevation = math.degrees(self.data_ref.get_elevation(row)[0])
+        self.image.a_ascension = self.data_ref.get_ascension(row)
+        self.image.a_declination = self.data_ref.get_declination(row)
+        self.image.a_azimuth = self.data_ref.get_azimuth(row)
+        self.image.a_elevation = self.data_ref.get_elevation(row)
         self.image.a_source = self.data_ref.get_source(row)
         self.image.a_on_track = self.data_ref.get_on_track(row)
         self.image.height, self.image.width = self.image.data[0].shape
