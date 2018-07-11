@@ -5,7 +5,7 @@ Features
 * Batch processing (requires trivial script)
 * Data visualization (including cross sections, contrast adjustment)
 * Metadata visualization
-* Hdf5 data IO
+* Hdf5 data IO (partly supported)
 * Fits data IO 
 * Manual flagging
 * Flag matrices visualization, deletion and merging
