@@ -1,7 +1,7 @@
 =================
 Package structure
 =================
-DW python package is composed by 3 python sub-packages in charge of different functionalities 
+The DW package is composed by 3 python sub-packages in charge of different functionalities 
 and responsibilities and a C library aimed to provide efficient implementation of RFI detection algorithms. Each sub-package is in turn eventually divided in several files.
 
 .. image:: dw_struct.png
@@ -16,8 +16,7 @@ dw subpackages
 
 :doc:`dw.core`
 --------------
-This package contains the implementation of the core functionalities of the 
-package: main data structure definition, data I/O, command logging, manual flagging, 
+This package contains the implementation of the core functionalities of DW: main data structure definition, data I/O, command logging, manual flagging, 
 auto flagging algorithm call.
 
 The package implements the following classes:
