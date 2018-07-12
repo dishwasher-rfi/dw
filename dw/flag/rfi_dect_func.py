@@ -328,7 +328,7 @@ class SimpleThreshold(FlagAlgorithm):
     name = "SimpleThreshold"
     description = "Detection using a threshold on the median of the entire matrix"
     def_params = {'num_of_rms_above_median':(2., 0., nan)}
-    is_exec = True
+    is_exec = False
 
     def _define_output(self):
         """Define the available and default output options labels
